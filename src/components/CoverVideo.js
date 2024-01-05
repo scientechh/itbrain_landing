@@ -19,7 +19,7 @@ video{
 const CoverVideo = () => {
   return (
     <VideoContainer>
-        <video src={GIF} type="video/mp4" autoPlay muted loop  />
+        <video src={GIF} type="video/mp4" autoPlay muted loop controls={false}  />
     </VideoContainer>
   )
 }
