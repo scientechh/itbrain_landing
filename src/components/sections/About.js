@@ -4,7 +4,7 @@ import styled, {ThemeProvider} from 'styled-components'
 import Button from '../Button'
 import {dark} from '../../styles/Themes';
 import Loading from '../Loading';
-
+import TelegramIcon from '@mui/icons-material/Telegram';
 
 const Carousel = lazy(() => import("../Carousel"));
 
@@ -156,19 +156,19 @@ const About = () => {
                         <Carousel/> </Suspense> </Box>
                 <Box>
                     <Title>
-                        Բարի Գալուստ <br/> ITBrain.
+                        Բարի Գալուստ <br/> ITBrain
                     </Title>
                     <SubText>
                         ITBrain-ը կրթական հարթակ է որի ծրագիրը բաղկացած է ինքնուսուցողական վարժանքներից և դասընթացներից
                         5 հիմնական ոլորտներում: Այս ամենը համակցում են` շարժվելով անձնական ITBrain Env բաժնով:
                     </SubText>
                     <SubTextLight>
-                        Նորությոնների, քննարկումների և մրցույթների մասին կարող եք ծանոթանալ միանալով մեր Telegram-յան
+                        Նորությունների, քննարկումների և մրցույթների մասին կարող եք ծանոթանալ միանալով մեր Telegram-յան
                         խմբին։
                     </SubTextLight>
                     <ButtonContainer>
                         <ThemeProvider theme={dark}>
-                            <Button text="ՄԻԱՑԻՐ ՄԵԶ" link="#"/>
+                            <Button text={<>ՄԻԱՑԻՐ ՄԵԶ <TelegramIcon/></>} link="https://t.me/ittbrainn"/>
                         </ThemeProvider>
                     </ButtonContainer>
                 </Box>

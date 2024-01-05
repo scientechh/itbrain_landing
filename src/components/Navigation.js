@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Button from "./Button";
 import {Images} from "../assets/images/Images";
+import FaceIcon from '@mui/icons-material/Face';
 
 const Section = styled.section`
   width: 100vw;
@@ -71,7 +72,7 @@ const MenuItem = styled.li`
     width: 0;
     height: 2px;
     margin-top: 2px;
-    background: ${(props) => props.theme.text};
+    background: #ffb700;
     transition: width 0.3s ease;
   }
   &:hover::after {
@@ -162,12 +163,12 @@ const Navigation = () => {
           <MenuItem onClick={() => scrollTo("faq")}>ՀՏՀ</MenuItem>
           <MenuItem>
             <div className="mobile">
-              <Button text="Մուտք" link="https://google.com" newTab={true} />
+              <Button text={<>Մուտք<FaceIcon/></>} link="https://google.com" newTab={true} />
             </div>
           </MenuItem>
         </Menu>
         <div className="desktop">
-          <Button text="Մուտք / Գրանցում" link="https://google.com" newTab={true}/>
+          <Button text={<>Մուտք / Գրանցում<FaceIcon/></>} link="https://google.com" newTab={true}/>
         </div>
       </NavBar>
     </Section>

@@ -2,25 +2,27 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-
 const Btn = styled.a`
-display: inline-block;
-background-color: ${props => props.theme.text};
-color: ${props => props.theme.body};
-outline: none;
-border: none;
+  display: inline-flex;
+  background-color: ${props => props.theme.text};
+  color: ${props => props.theme.body};
+  outline: none;
+  border: none;
+  align-items: center;
+  gap: 5px;
 
-font-size: ${props => props.theme.fontsm};
-padding: 0.9rem 2.3rem;
-border-radius: 50px;
-cursor: pointer;
-transition: all 0.2s ease;
-position: relative;
-&:hover{
+  font-size: ${props => props.theme.fontsm};
+  padding: 0.9rem 2.3rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+
+  &:hover {
     transform: scale(0.9);
-}
+  }
 
-&::after{
+  &::after {
     content: ' ';
     position: absolute;
     top: 50%;
@@ -31,20 +33,20 @@ position: relative;
     height: 100%;
     border-radius: 50px;
     transition: all 0.2s ease;
-}
+  }
 
-&:hover::after{
+  &:hover::after {
     transform: translate(-50%, -50%) scale(1);
     padding: 0.3rem;
-}
+  }
 `
 
-const Button = ({text, link="#", newTab=false}) => {
-  return (
-<Btn href={link} aria-label={text} target={newTab ? "_blank" : "_self"} rel="noreferrer" >
-{text}
-</Btn>
-  )
+const Button = ({text, link = "#", newTab = false}) => {
+    return (
+        <Btn href={link} aria-label={text} target={newTab ? "_blank" : "_self"} rel="noreferrer">
+            {text}
+        </Btn>
+    )
 }
 
 export default Button
