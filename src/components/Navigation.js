@@ -163,12 +163,12 @@ const Navigation = () => {
           <MenuItem onClick={() => scrollTo("faq")}>ՀՏՀ</MenuItem>
           <MenuItem>
             <div className="mobile">
-              <Button text={<>Մուտք<FaceIcon/></>} link="https://google.com" newTab={true} />
+              <Button text={<>Մուտք<FaceIcon/></>} link="https://itbrainn.vercel.app/" newTab={true} />
             </div>
           </MenuItem>
         </Menu>
         <div className="desktop">
-          <Button text={<>Մուտք / Գրանցում<FaceIcon/></>} link="https://google.com" newTab={true}/>
+          <Button text={<>Մուտք / Գրանցում<FaceIcon/></>} link="https://itbrainn.vercel.app/" newTab={true}/>
         </div>
       </NavBar>
     </Section>

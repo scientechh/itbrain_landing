@@ -153,7 +153,7 @@ const Banner = () => {
             </ImgContainer>
             <Title>Միացիր մեր <br/> ITBrain-ին </Title>
             <BtnContainer>
-                <JoiNow href="/#">
+                <JoiNow href="https://itbrainn.vercel.app/">
                     <>
                         Միանալ
                         <EmojiEmotionsIcon/>

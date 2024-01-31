@@ -155,12 +155,6 @@ const Footer = () => {
                         >
                             <Instagram/>
                         </a>
-                        <a href="https://twitter.com/code_bucks" target='_blank'
-                           rel="noopener noreferrer"
-                           aria-label='twitter'
-                        >
-                            <Twitter/>
-                        </a>
                         <a href="https://www.linkedin.com/in/codebucks/" target='_blank'
                            rel="noopener noreferrer"
                            aria-label='linkedin'
@@ -182,9 +176,9 @@ const Footer = () => {
           &copy; {new Date().getFullYear()} ITBrain
         </span>
                 <span>
-          Պատրաստված է <a href="https://devdreaming.com/about" target="_blank" rel="dofollow noreferrer">
-            DOIT Center
-          </a> կողմից
+          <a href="https://sienoacademy.vercel.app/" target="_blank" rel="dofollow noreferrer">
+            Sieno Academy
+          </a>
         </span>
             </Bottom>
         </Section>
