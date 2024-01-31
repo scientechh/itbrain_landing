@@ -143,23 +143,17 @@ const Footer = () => {
                 <Left>
                     <Logo/>
                     <IconList>
-                        <a href="http://facebook.com" target='_blank'
+                        <a href="#" target='_blank'
                            rel="noopener noreferrer"
                            aria-label='facebook'
                         >
                             <Facebook/>
                         </a>
-                        <a href="https://www.instagram.com/code.bucks/" target='_blank'
+                        <a href="#" target='_blank'
                            rel="noopener noreferrer"
                            aria-label='instagram'
                         >
                             <Instagram/>
-                        </a>
-                        <a href="https://www.linkedin.com/in/codebucks/" target='_blank'
-                           rel="noopener noreferrer"
-                           aria-label='linkedin'
-                        >
-                            <LinkedIn/>
                         </a>
                     </IconList>
                 </Left>
